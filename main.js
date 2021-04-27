@@ -1,5 +1,5 @@
 /**
- * This program takes an array input of integers and converts it into the phoentic equivalent
+ * This program takes an array input of integers and converts it into the phonetic equivalent
  * @author Kundan Patil
  * @email kp4677@rit.edu
  *
