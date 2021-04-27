@@ -1,8 +1,18 @@
+/**
+ * This program takes an array input of integers and converts it into the phoentic equivalent
+ * @author Kundan Patil
+ * @email kp4677@rit.edu
+ *
+ */
 // Variable to store the output
 var answer = [];
 // Read all the available data from command line
 var data = process.argv;
 
+/**
+ * @description Function to log the processed data output to the console
+ * @argument inputArray Processed data to log to console
+ */
 printOutput = (inputArray) => {
     // Print the output on console
     var outputString = "";
@@ -16,6 +26,10 @@ printOutput = (inputArray) => {
   }
 
 
+/**
+ * @description Entry point for processing input
+ * @argument data User input from command line
+ */
 processInput = (data) => {
     // This condition signals no command line arguments 
     if (data.length == 2){
