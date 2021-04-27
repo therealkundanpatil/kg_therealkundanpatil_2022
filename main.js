@@ -1,5 +1,5 @@
 // Variable to store the output
-var answer = "";
+var answer = [];
 // Read all the available data from command line
 var data = process.argv;
 
@@ -35,16 +35,16 @@ else{
       for ( j = 0; j < elements.length; j++ ){
         combinedWords += mapNumberToWord.get(elements[j]);
       }
-      answer += combinedWords;    
+      answer.push(combinedWords);    
     }
     // Checks for single digit number string
     else{
-      answer += mapNumberToWord.get(data[i]);
+      answer.push(mapNumberToWord.get(data[i]));
     }
 
     // Condition for inserting commas, till second last element append comma to output
     if(i < data.length - 1){
-      answer += ",";
+      answer.push(",");
     }  
 
   }
