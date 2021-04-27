@@ -43,11 +43,18 @@ else{
     }
 
     // Condition for inserting commas, till second last element append comma to output
-    if(i < data.length - 1){
-      answer.push(",");
-    }  
+    // if(i < data.length - 1){
+    //   answer.push(",");
+    // }  
 
   }
   // Print the output on console
-  console.log(answer);
+  var outputString = "";
+  for(var i =0;i<answer.length;i++){
+      outputString+= answer[i];
+      if(i <= answer.length - 2){
+          outputString += ",";
+      }
+  }
+  console.log(outputString);
 }
